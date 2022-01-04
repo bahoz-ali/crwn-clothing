@@ -4,3 +4,9 @@ body {
   padding: 20px 60px;
   margin: 0;
 }
+
+
+a {
+  text-decoration: none;
+  color: black;
+}

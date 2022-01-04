@@ -1,13 +1,15 @@
 // eslint-disable-next-line
-import React, { useState } from "react";
+import React from "react";
 import Homepage from "./pages/homepage/c.homepage";
 import ShopPage from "./pages/shop/c.shop";
 import "./app.css";
-import { useParams, Link, Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/c.header";
 
 export default function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/shop" element={<ShopPage />} />
