@@ -2,7 +2,7 @@ import React from "react";
 import MenuItem from "../menu-item/c.menu-item";
 import "./s.directory.scss";
 
-//* Directory is part of (HomPage-Component)
+//* Directory is part of (HomepageComponent)
 class Directory extends React.Component {
   state = {
     sections: [
@@ -40,12 +40,13 @@ class Directory extends React.Component {
       },
     ],
   };
+
   render() {
     const { sections } = this.state;
     return (
       <div className="directory-menu">
-        {sections.map(({ id, title, imageUrl, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+        {sections.map(({ id, ...otherProps }) => (
+          <MenuItem key={id} {...otherProps} />
         ))}
       </div>
     );

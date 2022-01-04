@@ -1,9 +1,12 @@
 // eslint-disable-next-line
 import React from "react";
 import ReactDom from "react-dom";
-import App from "./app";
+import App from "./app.js";
+import { BrowserRouter } from "react-router-dom";
 
-
-
-
-ReactDom.render( <App />, document.getElementById("root"));
+ReactDom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
