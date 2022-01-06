@@ -3,8 +3,12 @@ body {
   font-family: "open sans condensed";
   padding: 20px 60px;
   margin: 0;
+  background-color: rgb(29, 26, 26);
 }
 
+*{
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;

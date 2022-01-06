@@ -1,1 +1,15 @@
-    
+.signIn-signUp {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+
+  .vertical-line {
+    margin-top: 40px;
+    border-left: 5px dotted  rgba(62, 66, 62, 0.308);
+    height: 300px;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+}
