@@ -57,10 +57,9 @@ export const signInWithGoogle = () =>
       await newUserDoc(user);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.email;
+      const { code, email, message } = error;
       const credential = GoogleAuthProvider.credentialFromError(error);
+      console.log(code, email, message, credential);
     });
 
 provider.setCustomParameters({ prompt: "select_account" });
