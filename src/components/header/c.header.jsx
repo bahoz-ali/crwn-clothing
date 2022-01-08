@@ -10,13 +10,6 @@ const Header = function () {
 
   return (
     <div className="header">
-      <button
-        onClick={() => {
-          console.log("currentUser:", currentUser);
-        }}
-      >
-        click me
-      </button>
       <Link className="logo-container" to="/">
         <Logo className="logo" />
       </Link>
@@ -28,8 +21,8 @@ const Header = function () {
           CONTACT
         </Link>
         {!currentUser && (
-          <Link className="option" to="/signin">
-            SIGN IN
+          <Link className="option" to="signin">
+            SIGNIN
           </Link>
         )}
         {currentUser && (
