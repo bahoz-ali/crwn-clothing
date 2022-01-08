@@ -1,3 +1,4 @@
+import "./app.css";
 import React, { useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Homepage from "./pages/homepage/c.homepage";
@@ -5,7 +6,6 @@ import ShopPage from "./pages/shop/c.shop";
 import Header from "./components/header/c.header";
 import SingInSignUp from "./pages/signin-signup/c.signin-signup";
 import { auth } from "./firebase/firebase.utils";
-import "./app.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "./features/userSlice";
 

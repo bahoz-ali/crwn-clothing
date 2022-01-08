@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import "./s.header.scss";
 import { auth } from "../../firebase/firebase.utils";
 import { useSelector } from "react-redux";
+import CartIcon from "../card_icon/c.card_icon";
+import CartDropdown from "../cart_dropdown/c.cart_dropdown";
 
 const Header = function () {
   const currentUser = useSelector((state) => state.user.value);
+  const popup = useSelector((state) => state.cart.value);
 
   return (
     <div className="header">
@@ -26,21 +29,13 @@ const Header = function () {
           </Link>
         )}
         {currentUser && (
-          <Link
-            onClick={() => {
-              console.log("currentUser:", currentUser);
-              auth.signOut();
-            }}
-            className="option"
-            to="/signin"
-          >
+          <Link onClick={() => auth.signOut()} className="option" to="/signin">
             LOGOUT
           </Link>
         )}
-        <Link className="option" to="/signin">
-          😁
-        </Link>
+        <CartIcon />
       </div>
+      {popup && <CartDropdown />}
     </div>
   );
 };
