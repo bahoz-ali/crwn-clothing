@@ -1,6 +1,6 @@
 import React from "react";
 import "./s.menu-item.scss";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 //* menuItem is part of (Directory-component)
 const MenuItem = ({ title, imageUrl, size, linkUrl }) => {

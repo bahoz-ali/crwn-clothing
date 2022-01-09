@@ -1,0 +1,27 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 5px;
+  min-height: 100px;
+
+  img {
+    width: 50%;
+    height: 120px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .item-details {
+    width: 50%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .price {
+    text-align: center;
+  }
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+}

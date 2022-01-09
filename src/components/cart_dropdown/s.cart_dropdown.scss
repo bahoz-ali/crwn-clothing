@@ -10,12 +10,15 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+  overflow-y: hidden;
 
   .cart-items {
+    box-sizing: border-box;
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   button {
