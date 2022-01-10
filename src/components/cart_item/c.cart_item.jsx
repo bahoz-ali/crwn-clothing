@@ -11,7 +11,7 @@ function CartItem({ item: { name, price, quantity, imageUrl } }) {
       <div className="item-details">
         <p className="name">{name}</p>
         <p className="price">
-          <span>{quantity}</span> x {price}$
+          {quantity} x {price}$
         </p>
       </div>
     </div>

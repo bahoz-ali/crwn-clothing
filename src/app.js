@@ -8,6 +8,7 @@ import SingInSignUp from "./pages/signin-signup/c.signin-signup";
 import { auth } from "./firebase/firebase.utils";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "./features/userSlice";
+import CheckoutPage from "./pages/checkouPage/c.checkoutPage";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="shop/sneakers" element={<Homepage />} />
         <Route path="shop/womens" element={<Homepage />} />
         <Route path="shop/mens" element={<Homepage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </div>
   );
