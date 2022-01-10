@@ -1,0 +1,11 @@
+Q1) How to remove item from the state??
+
+FIRST STEP
+s1) take the item id.
+s2) create a function ()=>{}
+s3) add this function to the state cart-itemSlice.js
+ 
+SECOND STEP
+s1) function should take itemId.
+s2) function return all other items without this itemId it means use filter method
+_______________________________________________

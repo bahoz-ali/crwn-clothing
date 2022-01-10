@@ -30,7 +30,7 @@ function CheckoutPage() {
         <HeaderBlock headerName="remove" />
       </div>
       {cartItems.map((cartItem) => {
-        return <CheckoutItem key={cartItem.id} cartItem={cartItem} />;
+        return <CheckoutItem  key={cartItem.id} cartItem={cartItem} />;
       })}
       <div className="total">
         <span>TOTAL: {totalMoney}</span>
