@@ -4,7 +4,7 @@ import { addItem } from "../../features/cart-ItemsSlice";
 import CustomButton from "../button/c.button";
 import "./s.collection_item.scss";
 
-//* this is part of (collection_preview)
+//* this is part of (collection_preview and collection_page)
 function CollectionItem({ id, imageUrl, price, name, ...rest }) {
   const dispatch = useDispatch();
 
@@ -15,7 +15,6 @@ function CollectionItem({ id, imageUrl, price, name, ...rest }) {
 
   return (
     <div className="collection-item">
-      <p></p>
       <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
       <div className="collection-footer">
         <span className="name">{name}</span>

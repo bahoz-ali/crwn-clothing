@@ -35,11 +35,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/shop/*" element={<ShopPage />} />
         <Route path="/signin" element={<SignInWrapper />} />
-        <Route path="shop/sneakers" element={<Homepage />} />
-        <Route path="shop/womens" element={<Homepage />} />
-        <Route path="shop/mens" element={<Homepage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </div>
